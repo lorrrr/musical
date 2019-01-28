@@ -10,8 +10,18 @@ var vScale = 16;
 function setup() {
   createCanvas(764,1024);
   pixelDensity(1);
-  video = createCapture(VIDEO);
+  var constraints = {
+    audio: false,
+    video: {
+
+      facingMode: "user",
+      frameRate: 10
+    }
+  };
+
+  video = createCapture(constraints);
   video.size(cwidth,cheight);
+  
   video.elt.setAttribute('playsinline', '');
    background(183,39,38);
 }
