@@ -11,7 +11,7 @@ function setup() {
   capture = createCapture(constraints);
 }
 function draw() {
-  background(255);
+  background(40);
   image(capture, 0, 0, 640, 480);
    filter(INVERT); 
 }
