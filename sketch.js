@@ -15,11 +15,11 @@ function setup() {
     video: {
 
       facingMode: "user",
-      frameRate: 2
+      frameRate: 5
     }
     
   };
-frameRate(2);
+frameRate(5);
   video = createCapture(constraints);
   video.size(cwidth,cheight);
   
