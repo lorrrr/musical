@@ -7,6 +7,7 @@ var ph=pw*5;
 
 function setup() {
   createCanvas(764,1024);
+  pixelDensity(1);
   var constraints = {
     audio: false,
     video: {
@@ -24,7 +25,7 @@ function setup() {
   
 }
 function draw() {
-  background(20);
+ // background(20);
   image(capture,0,0);
   capture.loadPixels();
   for (var x = 0; x < cwidth; x++) {
