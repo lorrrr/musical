@@ -11,7 +11,7 @@ function setup() {
   createCanvas(764,1024);
   pixelDensity(1);
   video = createCapture(VIDEO);
-  video.size(width/vScale, height/vScale);
+  video.size(cwidth,cheight);
   video.elt.setAttribute('playsinline', '');
 }
 
