@@ -19,17 +19,16 @@ function setup() {
   capture = createCapture(constraints);
   capture.elt.setAttribute('playsinline', '');
   capture.size(60,55);
- // capture.hide();
+  capture.hide();
   var threshold = 77;
   strokeWeight(1);
   
 }
 function draw() {
   background(235);
-  
   capture.loadPixels();
-  for (var x = 0; x < cwidth; x++) {
-    for (var y = 0; y < cheight; y+=10) {
+  for (var x = 0; x <= cwidth; x++) {
+    for (var y = 0; y <= cheight; y+=5) {
       var index = (x+y+cwidth)*4;
       var r = capture.pixels[index+0];
       var g = capture.pixels[index+1];
