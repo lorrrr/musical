@@ -12,5 +12,5 @@ function setup() {
 }
 function draw() {
   image(capture, 0, 0, 640, 480);
-  // filter(INVERT); // ;-)
+   filter(INVERT); 
 }
