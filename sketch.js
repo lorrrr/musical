@@ -18,7 +18,7 @@ function setup() {
   };
   capture = createCapture(constraints);
   capture.elt.setAttribute('playsinline', '');
-  capture.size(60,100);
+  capture.size(60,55);
   capture.hide();
   var threshold = 77;
   strokeWeight(1);
@@ -52,5 +52,6 @@ function draw() {
       }
     }
   }
+  image(capture,0,0,600,550);
   
 }
