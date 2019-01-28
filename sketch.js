@@ -1,9 +1,14 @@
 var video;
 
+var cwidth = 60;
+var cheight = 55;
+var pw=12;
+var ph=pw*5;
+
 var vScale = 16;
 
 function setup() {
-  createCanvas(640, 480);
+  createCanvas(764,1024);
   pixelDensity(1);
   video = createCapture(VIDEO);
   video.size(width/vScale, height/vScale);
