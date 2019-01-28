@@ -1,8 +1,8 @@
 var video;
 
-var cwidth = 54;
-var cheight = 46;
-var pw=20;
+var cwidth = 60;
+var cheight = 55;
+var pw=12;
 var ph=pw*5;
 
 
@@ -29,8 +29,7 @@ frameRate(5);
 
 function draw() {
   
-  translate(40,40);
-  scale(1.2);
+  translate(20,20);
   video.loadPixels();
   loadPixels();
   for (var y = 0; y < video.height; y+=5) {
