@@ -9,6 +9,7 @@ function setup() {
     }
   };
   capture = createCapture(constraints);
+  capture.size(430,240);
 }
 function draw() {
  // background(40);
