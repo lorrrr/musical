@@ -47,7 +47,7 @@ function draw() {
       stroke(0);
       strokeWeight(1.5);
       line(x*pw,y*pw,x*pw+pw,y*pw);
-      line(x*pw+ph-pw,y*pw,x*pw+pw,y*pw);
+      line(x*pw,y*pw+ph-pw,x*pw+pw,y*pw+ph-pw);
       line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw+ph-pw);
       
       
