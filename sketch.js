@@ -14,7 +14,7 @@ function setup() {
     audio: false,
     video: {
 
-      facingMode: "user",
+      facingMode: "environment",
       frameRate: 5
     }
     
