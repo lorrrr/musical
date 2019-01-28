@@ -49,7 +49,7 @@ function draw() {
       line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw+ph-pw);
       
       
-      if ((bright >= 150) && (index % 16 !=0) && (index%28 != 0)) {
+      if ((bright >= 200) && (index % 16 !=0) && (index%28 != 0)) {
         noStroke();
         fill(20);
         rect(x*pw+pw/4,y*pw,pw/2,ph/2);
