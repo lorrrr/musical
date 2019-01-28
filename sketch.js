@@ -15,7 +15,7 @@ function draw() {
 
   video.loadPixels();
   loadPixels();
-  for (var y = 0; y < video.height; y++) {
+  for (var y = 0; y < video.height; y+=5) {
     for (var x = 0; x < video.width; x++) {
       var index = (video.width - x + 1 + (y * video.width))*4;
       var r = video.pixels[index+0];
@@ -24,12 +24,20 @@ function draw() {
 
       var bright = (r+g+b)/3;
 
-      var w = map(bright, 0, 255, 0, vScale);
-
       noStroke();
       fill(255);
-      rectMode(CENTER);
-      rect(x*vScale, y*vScale, w, w);
+      rect(x*pw,y*pw,pw,ph-pw);
+      stroke(0);
+      line(x*pw,y*pw,x*pw+pw,y*pw);
+      line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw+ph-pw);
+      
+      
+      if (bright < 77) {
+        noStroke();
+        fill(20);
+        rect(x*pw+pw/4,y*ph,pw/2,ph/2);
+
+      }
 
     }
   }
