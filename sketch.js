@@ -1,14 +1,16 @@
 var capture;
 
 function setup() {
-  createCanvas(480, 480);
-  background(255);
-  capture = createCapture(VIDEO);
-  capture.hide();
+  createCanvas(640, 480);
+  var constraints = {
+    audio: false,
+    video: {
+      facingMode: "user"
+    }
+  };
+  capture = createCapture(constraints);
 }
-
 function draw() {
-  
-  image(capture, 0, 0, width, width * capture.height / capture.width);
-  filter(INVERT);
+  image(capture, 0, 0, 640, 480);
+  // filter(INVERT); // ;-)
 }
