@@ -40,7 +40,7 @@ function draw() {
       if (bright < 77) {
         noStroke();
         fill(20);
-        rect(x*pw+pw/4,y*ph,pw/2,ph/2);
+        rect(x*pw+pw/4,y*pw,pw/2,ph/2);
 
       }
 
