@@ -19,12 +19,13 @@ function setup() {
   capture.elt.setAttribute('playsinline', '');
   capture.size(60,55);
   capture.hide();
-  var threshold = 50;
+  var threshold = 77;
   strokeWeight(2);
   
 }
 function draw() {
   background(20);
+  image(capture,0,0);
   capture.loadPixels();
   for (var x = 0; x < cwidth; x++) {
     for (var y = 0; y < cwidth; y+=10) {
