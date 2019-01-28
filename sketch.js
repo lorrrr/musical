@@ -6,7 +6,7 @@ function setup() {
     audio: false,
     video: {
 
-      facingMode: "environment",
+      facingMode: "user",
       frameRate: 10
     }
   };
@@ -15,6 +15,7 @@ function setup() {
   capture.hide();
 }
 function draw() {
+  background(40);
   image(capture, 0, 0, windowWidth, windowHeight);
   //filter(INVERT);
 }
