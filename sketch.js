@@ -1,7 +1,7 @@
 var capture;
 var cwidth = 60;
 var cheight = 55;
-var pw=10;
+var pw=12;
 var ph=pw*5;
 
 
@@ -19,7 +19,7 @@ function setup() {
   capture = createCapture(constraints);
   capture.elt.setAttribute('playsinline', '');
   capture.size(60,55);
-  //capture.hide();
+  capture.hide();
   var threshold = 77;
   strokeWeight(1);
   
@@ -38,10 +38,10 @@ function draw() {
       
       noStroke();
       fill(255);
-      rect(x*pw,y*ph,pw,ph-pw);
+      rect(x*pw,y*pw,pw,ph-pw);
       stroke(0);
-      line(x*pw,y*ph,x*pw+pw,y*ph);
-      line(x*pw+pw/2,y*ph,x*pw+pw/2,y*ph+ph-pw);
+      line(x*pw,y*pw,x*pw+pw,y*pw);
+      line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw+ph-pw);
       
       
       if (bright < threshold) {
@@ -52,6 +52,6 @@ function draw() {
       }
     }
   }
-  image(capture,0,0,600,550);
+  //image(capture,0,0,600,550);
   
 }
