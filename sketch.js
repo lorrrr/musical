@@ -45,6 +45,7 @@ function draw() {
       fill(255);
       rect(x*pw,y*pw,pw,ph-pw);
       stroke(0);
+      strokeWidth(2);
       line(x*pw,y*pw,x*pw+pw,y*pw);
       line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw+ph-pw);
       
