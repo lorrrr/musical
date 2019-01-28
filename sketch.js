@@ -21,7 +21,7 @@ function setup() {
   capture.size(60,55);
   capture.hide();
   var threshold = 77;
-  strokeWeight(2);
+  strokeWeight(3);
   
 }
 function draw() {
@@ -29,7 +29,7 @@ function draw() {
   image(capture,0,0);
   capture.loadPixels();
   for (var x = 0; x < cwidth; x++) {
-    for (var y = 0; y < cwidth; y+=10) {
+    for (var y = 0; y < cheight; y+=10) {
       var index = (x+y+cwidth)*4;
       var r = capture.pixels[index+0];
       var g = capture.pixels[index+1];
