@@ -17,6 +17,7 @@ function setup() {
       facingMode: "user",
       frameRate: 10
     }
+    frameRate(10);
   };
 
   video = createCapture(constraints);
