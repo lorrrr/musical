@@ -28,7 +28,7 @@ frameRate(5);
 }
 
 function draw() {
-  
+   background(183,39,38);
   translate(20,90);
   video.loadPixels();
   loadPixels();
