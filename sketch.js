@@ -24,6 +24,7 @@ function setup() {
   
 }
 function draw() {
+  background(20);
   capture.loadPixels();
   for (var x = 0; x < cwidth; x++) {
     for (var y = 0; y < cwidth; y+=10) {
