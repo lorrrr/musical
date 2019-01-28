@@ -21,7 +21,7 @@ function setup() {
   capture.size(60,55);
  // capture.hide();
   var threshold = 77;
-  strokeWeight(2.5);
+  strokeWeight(2);
   
 }
 function draw() {
@@ -38,7 +38,7 @@ function draw() {
       
       noStroke();
       fill(255);
-      rect(x*pw,y+ph,pw,ph-pw);
+      rect(x*pw,y*ph,pw,ph-pw);
       stroke(0);
       line(x*pw,y*ph,x*pw+pw,y*ph);
       line(x*pw+pw/2,y*ph,x*pw+pw/2,y*ph+ph);
