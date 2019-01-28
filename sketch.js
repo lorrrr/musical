@@ -1,22 +1,19 @@
+
+
 var capture;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(640, 480);
   var constraints = {
     audio: false,
     video: {
-
-      facingMode: "environment",
-      frameRate: 10
+      facingMode: "user"
     }
   };
   capture = createCapture(constraints);
-  capture.elt.setAttribute('playsinline', '');
-  capture.hide();
+    capture.elt.setAttribute('playsinline', '');
 }
 function draw() {
-    background(50);
-  image(capture, 0, 0, windowWidth, windowHeight);
-
-  //filter(INVERT);
-}
+  background(40);
+  image(capture, 0, 0, 640, 480);
+   filter(INVERT); 
