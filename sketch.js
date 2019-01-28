@@ -18,7 +18,7 @@ function setup() {
   };
   capture = createCapture(constraints);
   capture.elt.setAttribute('playsinline', '');
-  capture.size(60,55);
+  capture.size(60,100);
   capture.hide();
   var threshold = 77;
   strokeWeight(1);
@@ -27,6 +27,7 @@ function setup() {
 function draw() {
   background(235);
   capture.loadPixels()
+  
   for (var x = 0; x <= cwidth; x++) {
     for (var y = 0; y <= cheight; y+=5) {
       var index = (x+y*cwidth)*4;
