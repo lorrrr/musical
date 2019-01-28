@@ -38,10 +38,10 @@ function draw() {
       
       noStroke();
       fill(255);
-      rect(x*pw,y*ph,pw,ph-pw);
+      rect(x*pw,y*pw,pw,pw);
       stroke(0);
-      line(x*pw,y*ph,x*pw+pw,y*ph);
-      line(x*pw+pw/2,y*ph,x*pw+pw/2,y*ph+ph-pw);
+      line(x*pw,y*pw,x*pw+pw,y*pw);
+      line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw-pw);
       
       
       if (bright <= threshold) {
