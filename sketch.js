@@ -29,7 +29,7 @@ frameRate(5);
 
 function draw() {
   
-  translate(20,130);
+  translate(20,110);
   video.loadPixels();
   loadPixels();
   for (var y = 0; y < video.height; y+=5) {
@@ -45,7 +45,7 @@ function draw() {
       fill(255);
       rect(x*pw,y*pw,pw,ph-pw);
       stroke(0);
-      strokeWeight(2);
+      strokeWeight(1.5);
       line(x*pw,y*pw,x*pw+pw,y*pw);
       line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw+ph-pw);
       
