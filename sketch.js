@@ -13,11 +13,12 @@ function setup() {
   video = createCapture(VIDEO);
   video.size(cwidth,cheight);
   video.elt.setAttribute('playsinline', '');
+   background(183,39,38);
 }
 
 function draw() {
-  background(183,39,38);
-
+  
+  translate(20,20);
   video.loadPixels();
   loadPixels();
   for (var y = 0; y < video.height; y+=5) {
