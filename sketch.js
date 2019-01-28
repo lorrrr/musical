@@ -47,7 +47,7 @@ function draw() {
       if (bright < threshold) {
         noStroke();
         fill(20);
-        rect(x*pw+pw/4,y*ph,pw/2,ph/w);
+        rect(x*pw+pw/4,y*ph,pw/2,ph/2);
 
       }
     }
