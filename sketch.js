@@ -15,11 +15,11 @@ function setup() {
     video: {
 
       facingMode: "user",
-      frameRate: 5
+      frameRate: 10
     }
     
   };
-frameRate(5);
+frameRate(10);
   video = createCapture(constraints);
   video.size(cwidth,cheight);
   
@@ -28,7 +28,7 @@ frameRate(5);
 }
 
 function draw() {
-   background(183,39,38);
+  
   translate(20,90);
   video.loadPixels();
   loadPixels();
@@ -42,16 +42,13 @@ function draw() {
       var bright = (r+g+b)/3;
 
       noStroke();
-      
-      if (bright>200){
-        break;
-      }
       fill(255);
       rect(x*pw,y*pw,pw,ph-pw);
       stroke(0);
       strokeWeight(1.5);
       line(x*pw,y*pw,x*pw+pw,y*pw);
       line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw+ph-pw);
+      
       
       if ((bright <= 160) && (index % 16 !=0) && (index%28 != 0)) {
         noStroke();
