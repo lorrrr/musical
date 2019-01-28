@@ -1,7 +1,7 @@
 var capture;
 var cwidth = 60;
 var cheight = 55;
-var pw=6;
+var pw=10;
 var ph=pw*5;
 
 
@@ -19,14 +19,14 @@ function setup() {
   capture = createCapture(constraints);
   capture.elt.setAttribute('playsinline', '');
   capture.size(60,55);
-  capture.hide();
+ // capture.hide();
   var threshold = 77;
-  strokeWeight(3);
+  strokeWeight(2.5);
   
 }
 function draw() {
   background(235);
-  image(capture,0,0);
+  
   capture.loadPixels();
   for (var x = 0; x < cwidth; x++) {
     for (var y = 0; y < cheight; y+=10) {
