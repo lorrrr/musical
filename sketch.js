@@ -47,10 +47,11 @@ function draw() {
       stroke(0);
       strokeWeight(1.5);
       line(x*pw,y*pw,x*pw+pw,y*pw);
+      line(x*pw+ph-pw,y*pw,x*pw+pw,y*pw);
       line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw+ph-pw);
       
       
-      if ((bright <= 160) && (index % 16 !=0) && (index%28 != 0)) {
+      if ((bright <= 160) && (index % 16 !==0) && (index%28 !== 0)) {
         noStroke();
         fill(20);
         rect(x*pw+pw/4,y*pw,pw/2,ph/2);
