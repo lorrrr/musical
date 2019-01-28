@@ -21,7 +21,7 @@ function setup() {
   capture.size(60,55);
  // capture.hide();
   var threshold = 77;
-  strokeWeight(2);
+  strokeWeight(1);
   
 }
 function draw() {
@@ -41,7 +41,7 @@ function draw() {
       rect(x*pw,y*ph,pw,ph-pw);
       stroke(0);
       line(x*pw,y*ph,x*pw+pw,y*ph);
-      line(x*pw+pw/2,y*ph,x*pw+pw/2,y*ph+ph);
+      line(x*pw+pw/2,y*ph,x*pw+pw/2,y*ph+ph-pw);
       
       
       if (bright < threshold) {
