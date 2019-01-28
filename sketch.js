@@ -26,8 +26,7 @@ function setup() {
 }
 function draw() {
   background(235);
-  capture.loadPixels();
-  
+  capture.loadPixels()
   for (var x = 0; x <= cwidth; x++) {
     for (var y = 0; y <= cheight; y+=5) {
       var index = (x+y*cwidth)*4;
@@ -38,13 +37,13 @@ function draw() {
       
       noStroke();
       fill(255);
-      rect(x*pw,y*pw,pw,pw);
+      rect(x*pw,y*ph,pw,ph-pw);
       stroke(0);
-      line(x*pw,y*pw,x*pw+pw,y*pw);
-      line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw-pw);
+      line(x*pw,y*ph,x*pw+pw,y*ph);
+      line(x*pw+pw/2,y*ph,x*pw+pw/2,y*ph+ph-pw);
       
       
-      if (bright <= threshold) {
+      if (bright < threshold) {
         noStroke();
         fill(20);
         rect(x*pw+pw/4,y*ph,pw/2,ph/2);
