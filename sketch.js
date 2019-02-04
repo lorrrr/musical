@@ -59,7 +59,7 @@ function draw() {
         noStroke();
         fill(20);
         rect(x * pw + pw / 4, y * pw, pw / 2, ph / 2);
-
+        
       }
 
 
@@ -71,6 +71,7 @@ function draw() {
   noStroke();
   fill(183, 39, 38);
   rect(-2, -2, pw*20, ph-pw+4);
+  fill(190);
   textFont(font);
   textSize(30);
   text("A NEW MUSICAL",4,ph-pw+4);
