@@ -126,15 +126,15 @@ function draw() {
   
   stroke(183, 39, 38);
   strokeWeight(3);
-  textSize(24);
+  textSize(23);
   textAlign(RIGHT);
   fill(183, 39, 38);
   rect((cwidth-10)*pw, ph*6-1.5, pw*10+pw/2-3, ph-pw+4);
   fill(190);
    strokeWeight(0);
-  text("Based On",cwidth*pw,7*ph-pw-ph/3*2+3);
-  text("Alan Turing:",cwidth*pw,7*ph-pw-ph/3+3);
-  text("The Enigma",cwidth*pw,7*ph-pw);
+  text("Based On",cwidth*pw-2,7*ph-pw-ph/3*2+3);
+  text("Alan Turing:",cwidth*pw,7*ph-pw-ph/3+1.5);
+  text("The Enigma",cwidth*pw-2,7*ph-pw);
   
   
   
