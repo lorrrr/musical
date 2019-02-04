@@ -80,7 +80,7 @@ function draw() {
   textFont(font);
   textSize(58);
   textAlign(LEFT);
-  text("A NEW",4,ph-pw-4);
+  text("A NEW",2,ph-pw-6);
   
   /* row2 */
   stroke(183, 39, 38);
@@ -88,7 +88,7 @@ function draw() {
   fill(183, 39, 38);
   rect(0, ph-1.5, pw*19+pw/2-3, ph-pw+4);
   fill(190);
-  text("MUSICAL",4,2*ph-pw-4);
+  text("MUSICAL",2,2*ph-pw-6);
   
   
   /* row w-3 the */
@@ -97,7 +97,7 @@ function draw() {
   fill(183, 39, 38);
   rect(0, ph*10-1.5, pw*8+pw/2-3, ph-pw+4);
   fill(190);
-  text("THE",4,11*ph-pw-4);
+  text("THE",2,11*ph-pw-6);
   
   
   /* row w-2 imitation */
@@ -106,16 +106,16 @@ function draw() {
   fill(183, 39, 38);
   rect(0, ph*11-1.5, pw*22+pw/2-3, ph-pw+4);
   fill(190);
-  text("IMITATION",4,12*ph-pw-4);
+  text("IMITATION",2,12*ph-pw-6);
   
   
   /* row w-1 game */
   stroke(183, 39, 38);
   strokeWeight(3);
   fill(183, 39, 38);
-  rect(0, ph*12-1.5, pw*12+pw/2-3, ph-pw+4);
+  rect(0, ph*12-1.5, pw*13+pw/2-3, ph-pw+4);
   fill(190);
-  text("GAME",4,13*ph-pw-4);
+  text("GAME",2,13*ph-pw-6);
   
   
 }
