@@ -68,11 +68,11 @@ function draw() {
   }
 
   /* row1 */
-  noStroke();
-  fill(183, 39, 38);
-  rect(-2, -2, pw*20, ph-pw+4);
-  fill(190);
-  textFont(font);
-  textSize(30);
-  text("A NEW MUSICAL",4,ph-pw+4);
+  // noStroke();
+  // fill(183, 39, 38);
+  // rect(-2, -2, pw*20, ph-pw+4);
+  // fill(190);
+  // textFont(font);
+  // textSize(30);
+  // text("A NEW MUSICAL",4,ph-pw+4);
 }
