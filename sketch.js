@@ -4,10 +4,11 @@ var cwidth = 48;
 var cheight = 13 * 5;
 var pw = 14.5;
 var ph = pw * 5;
+var font;
 
 function preload() {
   
- var font = loadFont("assets/CircularBook.otf");
+ font = loadFont("assets/CircularBook.otf");
 }
 
 function setup() {
@@ -68,11 +69,12 @@ function draw() {
   }
 
   /* row1 */
-  // noStroke();
-  // fill(183, 39, 38);
-  // rect(-2, -2, pw*20, ph-pw+4);
-  // fill(190);
-  // textFont(font);
-  // textSize(30);
-  // text("A NEW MUSICAL",4,ph-pw+4);
+  noStroke();
+  fill(183, 39, 38);
+  rect(0, 0, pw*20, ph-pw+4);
+  fill(190);
+  textFont(font);
+  textSize(30);
+  textAlign(LEFT);
+  text("A NEW MUSICAL",4,ph-pw+4);
 }
