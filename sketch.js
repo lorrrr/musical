@@ -70,9 +70,9 @@ function draw() {
 
   /* row1 */
   stroke(183, 39, 38);
-  strokeWeight(1.5);
+  strokeWeight(3);
   fill(183, 39, 38);
-  rect(0, 0, pw*13, ph-pw+4);
+  rect(0, 0, pw*13+pw/2, ph-pw+4);
   fill(190);
   textFont(font);
   textSize(52);
