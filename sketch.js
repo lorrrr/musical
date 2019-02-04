@@ -75,7 +75,7 @@ function draw() {
   rect(0, 0, pw*13, ph-pw+4);
   fill(190);
   textFont(font);
-  textSize(47);
+  textSize(52);
   textAlign(LEFT);
-  text("A NEW",4,ph-pw+4);
+  text("A NEW",4,ph-pw);
 }
