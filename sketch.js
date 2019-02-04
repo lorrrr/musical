@@ -126,7 +126,7 @@ function draw() {
   
   stroke(183, 39, 38);
   strokeWeight(3);
-  textSize(20);
+  textSize(23);
   textAlign(RIGHT);
   fill(183, 39, 38);
   rect((cwidth-6)*pw, ph*6-1.5, pw*6+pw/2-3, ph-pw+4);
