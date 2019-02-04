@@ -1,5 +1,7 @@
-var video;
+//lorrrr.github.io/piano
 
+
+var video;
 var cwidth = 48;
 var cheight = 13 * 5;
 var pw = 14.5;
@@ -63,7 +65,7 @@ function draw() {
         
       }
 
-
+ 
 
     }
   }
@@ -73,9 +75,10 @@ function draw() {
   strokeWeight(3);
   fill(183, 39, 38);
   rect(0, 0, pw*13+pw/2-3, ph-pw+4);
+  noStroke();
   fill(190);
   textFont(font);
-  textSize(52);
+  textSize(58);
   textAlign(LEFT);
   text("A NEW",4,ph-pw-2);
   
@@ -83,7 +86,7 @@ function draw() {
   stroke(183, 39, 38);
   strokeWeight(3);
   fill(183, 39, 38);
-  rect(0, ph-pw-2, pw*13+pw/2-3, ph-pw+4);
+  rect(0, ph, pw*18+pw/2-3, ph-pw+4);
   fill(190);
   text("MUSICAL",4,2*ph-pw-2);
 }
