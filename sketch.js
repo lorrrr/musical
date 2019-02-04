@@ -2,7 +2,7 @@ var video;
 
 var cwidth = 60;
 var cheight = 13*5;
-var pw=16;
+var pw=13;
 var ph=pw*5;
 
 
