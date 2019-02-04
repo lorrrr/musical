@@ -5,7 +5,10 @@ var cheight = 13 * 5;
 var pw = 14.5;
 var ph = pw * 5;
 
-
+function preload() {
+  
+ var font = loadFont("assets/CircularBook.otf");
+}
 
 function setup() {
   createCanvas(764, 1024);
@@ -25,7 +28,7 @@ function setup() {
 
   video.elt.setAttribute('playsinline', '');
   background(183, 39, 38);
-  var font = loadFont("CircularBook.otf");
+  
 }
 
 function draw() {
@@ -65,6 +68,7 @@ function draw() {
   }
 
   /* row1 */
+  noStroke();
   fill(183, 39, 38);
   rect(-2, -2, pw*20, ph-pw+4);
   textFont(font);
