@@ -69,12 +69,13 @@ function draw() {
   }
 
   /* row1 */
-  noStroke();
+  stroke(183, 39, 38);
+  strokeWeight(1.5);
   fill(183, 39, 38);
-  rect(0, 0, pw*20, ph-pw+4);
+  rect(0, 0, pw*13, ph-pw+4);
   fill(190);
   textFont(font);
-  textSize(30);
+  textSize(47);
   textAlign(LEFT);
-  text("A NEW MUSICAL",4,ph-pw+4);
+  text("A NEW",4,ph-pw+4);
 }
