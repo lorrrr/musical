@@ -127,7 +127,7 @@ function draw() {
   fill(183, 39, 38);
   rect((cwidth-6)*pw, ph*6-1.5, pw*6+pw/2-3, ph-pw+4);
   fill(190);
-  text("Based On<br>Alan Turing:<br>The Enigma",cwidth-6)*pw,7*ph-pw-8);
+  text("Based On<br>Alan Turing:<br>The Enigma",(cwidth-6)*pw,7*ph-pw-8);
   
   
   
