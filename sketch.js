@@ -88,6 +88,7 @@ function draw() {
   fill(183, 39, 38);
   rect(0, ph-1.5, pw*19+pw/2-3, ph-pw+4);
   fill(190);
+  noStroke();
   text("MUSICAL",0,2*ph-pw-8);
   
   
@@ -97,6 +98,7 @@ function draw() {
   fill(183, 39, 38);
   rect(0, ph*10-1.5, pw*8+pw/2-3, ph-pw+4);
   fill(190);
+  noStroke();
   text("THE",0,11*ph-pw-8);
   
   
@@ -106,6 +108,7 @@ function draw() {
   fill(183, 39, 38);
   rect(0, ph*11-1.5, pw*22+pw/2-3, ph-pw+4);
   fill(190);
+  noStroke();
   text("IMITATION",0,12*ph-pw-8);
   
   
@@ -115,6 +118,7 @@ function draw() {
   fill(183, 39, 38);
   rect(0, ph*12-1.5, pw*13+pw/2-3, ph-pw+4);
   fill(190);
+  noStroke();
   text("GAME",0,13*ph-pw-8);
   
   
@@ -127,9 +131,10 @@ function draw() {
   fill(183, 39, 38);
   rect((cwidth-6)*pw, ph*6-1.5, pw*6+pw/2-3, ph-pw+4);
   fill(190);
-  text("Based On",cwidth,7*ph-pw-2-ph/3*2);
-  text("Alan Turing:",cwidth,7*ph-pw-2-ph/3);
-  text("The Enigma",cwidth,7*ph-pw-2);
+  noStroke();
+  text("Based On",cwidth*pw,7*ph-pw-2-ph/3*2);
+  text("Alan Turing:",cwidth*pw,7*ph-pw-2-ph/3);
+  text("The Enigma",cwidth*pw,7*ph-pw-2);
   
   
   
