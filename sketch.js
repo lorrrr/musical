@@ -133,7 +133,7 @@ function draw() {
   fill(200);
    strokeWeight(0);
   text("BASED ON",cwidth*pw-2,7*ph-pw-ph/3*2+3);
-  text("ALAN TURING:",cwidth*pw,7*ph-pw-ph/3+1.5);
+  text("ALAN TURING:",cwidth*pw+4,7*ph-pw-ph/3+1.5);
   text("THE ENIGMA",cwidth*pw-2,7*ph-pw);
   
   
