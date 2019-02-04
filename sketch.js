@@ -72,10 +72,18 @@ function draw() {
   stroke(183, 39, 38);
   strokeWeight(3);
   fill(183, 39, 38);
-  rect(0, 0, pw*13+pw/2, ph-pw+4);
+  rect(0, 0, pw*13+pw/2-3, ph-pw+4);
   fill(190);
   textFont(font);
   textSize(52);
   textAlign(LEFT);
-  text("A NEW",4,ph-pw);
+  text("A NEW",4,ph-pw-2);
+  
+  /* row2 */
+  stroke(183, 39, 38);
+  strokeWeight(3);
+  fill(183, 39, 38);
+  rect(0, ph-pw-2, pw*13+pw/2-3, ph-pw+4);
+  fill(190);
+  text("MUSICAL",4,2*ph-pw-2);
 }
