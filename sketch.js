@@ -76,7 +76,7 @@ function draw() {
   fill(183, 39, 38);
   rect(0, 0, pw*14+pw/2-3, ph-pw+4);
   noStroke();
-  fill(190);
+  fill(200);
   textFont(font);
   textSize(58);
   textAlign(LEFT);
@@ -87,7 +87,7 @@ function draw() {
   strokeWeight(3);
   fill(183, 39, 38);
   rect(0, ph-1.5, pw*19+pw/2-3, ph-pw+4);
-  fill(190);
+  fill(200);
   strokeWeight(0);
   text("MUSICAL",0,2*ph-pw-8);
   
@@ -97,7 +97,7 @@ function draw() {
   strokeWeight(3);
   fill(183, 39, 38);
   rect(0, ph*10-1.5, pw*8+pw/2-3, ph-pw+4);
-  fill(190);
+  fill(200);
   strokeWeight(0);
   text("THE",0,11*ph-pw-8);
   
@@ -107,7 +107,7 @@ function draw() {
   strokeWeight(3);
   fill(183, 39, 38);
   rect(0, ph*11-1.5, pw*22+pw/2-3, ph-pw+4);
-  fill(190);
+  fill(200);
   strokeWeight(0);
   text("IMITATION",0,12*ph-pw-8);
   
@@ -117,7 +117,7 @@ function draw() {
   strokeWeight(3);
   fill(183, 39, 38);
   rect(0, ph*12-1.5, pw*13+pw/2-3, ph-pw+4);
-  fill(190);
+  fill(200);
   strokeWeight(0);
   text("GAME",0,13*ph-pw-8);
   
@@ -126,15 +126,15 @@ function draw() {
   
   stroke(183, 39, 38);
   strokeWeight(3);
-  textSize(23);
+  textSize(20);
   textAlign(RIGHT);
   fill(183, 39, 38);
   rect((cwidth-9)*pw-pw/2, ph*6-3, pw*11-pw/2+3, ph-pw+8);
-  fill(190);
+  fill(200);
    strokeWeight(0);
-  text("Based On",cwidth*pw-2,7*ph-pw-ph/3*2+3);
-  text("Alan Turing:",cwidth*pw,7*ph-pw-ph/3+1.5);
-  text("The Enigma",cwidth*pw-2,7*ph-pw);
+  text("BASED ON",cwidth*pw-2,7*ph-pw-ph/3*2+3);
+  text("ALAN TURING:",cwidth*pw,7*ph-pw-ph/3+1.5);
+  text("THE ENIGMA",cwidth*pw-2,7*ph-pw);
   
   
   
