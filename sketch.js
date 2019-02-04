@@ -1,6 +1,6 @@
 var video;
 
-var cwidth = 60;
+var cwidth = 50;
 var cheight = 13*5;
 var pw=13;
 var ph=pw*5;
@@ -51,7 +51,7 @@ function draw() {
       line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw+ph-pw);
       
       
-      if ((bright <= 160) && (index % 16 !==0) && (index%28 !== 0)) {
+      if ((bright >= 160) && (index % 16 !==0) && (index%28 !== 0)) {
         noStroke();
         fill(20);
         rect(x*pw+pw/4,y*pw,pw/2,ph/2);
