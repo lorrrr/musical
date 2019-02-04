@@ -29,7 +29,7 @@ frameRate(10);
 
 function draw() {
   
-  translate(20,20);
+  translate(30,40);
   video.loadPixels();
   loadPixels();
   for (var y = 0; y < video.height; y+=5) {
