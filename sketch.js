@@ -2,7 +2,7 @@ var video;
 
 var cwidth = 50;
 var cheight = 13*5;
-var pw=14;
+var pw=15;
 var ph=pw*5;
 
 
@@ -34,7 +34,7 @@ function draw() {
   loadPixels();
   for (var y = 0; y < video.height; y+=5) {
     for (var x = 0; x < video.width; x++) {
-      var index = (x + 1 + (y * video.width))*4;
+      var index = (video.width-x + 1 + (y * video.width))*4;
       var r = video.pixels[index+0];
       var g = video.pixels[index+1];
       var b = video.pixels[index+2];
@@ -51,7 +51,7 @@ function draw() {
       line(x*pw+pw/2,y*pw,x*pw+pw/2,y*pw+ph-pw);
       
       
-      if ((bright >= 160) && (index % 16 !==0) && (index%28 !== 0)) {
+      if ((bright >= 130) && (index % 16 !==0) && (index%28 !== 0)) {
         noStroke();
         fill(20);
         rect(x*pw+pw/4,y*pw,pw/2,ph/2);
