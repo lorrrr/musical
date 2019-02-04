@@ -129,7 +129,7 @@ function draw() {
   textSize(23);
   textAlign(RIGHT);
   fill(183, 39, 38);
-  rect((cwidth-11)*pw-pw/2, ph*6-3, pw*11-pw/2+3, ph-pw+8);
+  rect((cwidth-9)*pw-pw/2, ph*6-3, pw*11-pw/2+3, ph-pw+8);
   fill(190);
    strokeWeight(0);
   text("Based On",cwidth*pw-2,7*ph-pw-ph/3*2+3);
