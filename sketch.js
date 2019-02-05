@@ -4,6 +4,7 @@ var cheight = 13 * 5;
 var pw = 14.5;
 var ph = pw * 5;
 var font;
+var canvas;
 
 function preload() {
   
@@ -11,7 +12,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(764, 1024);
+  canvas=createCanvas(764, 1024);
+   var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  canvas.position(x,y);
   pixelDensity(1);
   var constraints = {
     audio: false,
