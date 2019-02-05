@@ -4,14 +4,24 @@ var cheight = 13 * 5;
 var pw = 14.5;
 var ph = pw * 5;
 var font;
+var canvas;
 
+var cnv;
+
+function centerCanvas() {
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+  
+}
 function preload() {
   
  font = loadFont("assets/CircularBook.otf");
 }
 
 function setup() {
-  createCanvas(764, 1024);
+  canvas=createCanvas(764, 1024);
+  
   pixelDensity(1);
   var constraints = {
     audio: false,
@@ -134,4 +144,8 @@ function draw() {
   
   
   
+}
+
+function windowResized() {
+  centerCanvas();
 }
