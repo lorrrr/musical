@@ -11,16 +11,11 @@ function preload() {
  font = loadFont("assets/CircularBook.otf");
 }
 
-function centerCanvas() {
-  var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) / 2;
-  cnv.position(x, y);
-}
+
 function setup() {
   canvas=createCanvas(764, 1024);
-   var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) / 2;
-  canvas.position(x,y);
+   canvas.parent('sketch-holder');
+  
   pixelDensity(1);
   var constraints = {
     audio: false,

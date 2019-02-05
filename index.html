@@ -11,12 +11,35 @@
       display: none;
     }
 
+    #outer {
+      width: 100%;
+  text-align: center;
+    }
+
+    #sketch-holder {
+      display:inline;
+    }
+
+
     body {
       background-color: black;
-    }
+  margin: 0;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
   </style>
 </head>
 <body>
+  <div id="outer">
+  <div id="sketch-holder">
+       <!-- Our sketch will go here! -->
+     </div>
 
+   </div>
 </body>
 </html>
