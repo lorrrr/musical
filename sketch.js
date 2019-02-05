@@ -1,6 +1,3 @@
-
-
-
 var video;
 var cwidth = 48;
 var cheight = 13 * 5;
@@ -28,7 +25,6 @@ function setup() {
   frameRate(10);
   video = createCapture(constraints);
   video.size(cwidth, cheight);
-
   video.elt.setAttribute('playsinline', '');
   background(183, 39, 38);
   
@@ -124,17 +120,17 @@ function draw() {
   
   /*right small text*/
   
-  stroke(183, 39, 38);
-  strokeWeight(3);
-  textSize(20);
-  textAlign(RIGHT);
-  fill(183, 39, 38);
-  rect((cwidth-10)*pw-pw/2, ph*6-3, pw*11-pw/2+3, ph-pw+8);
-  fill(200);
-   strokeWeight(0);
-  text("BASED ON",cwidth*pw,7*ph-pw-ph/3*2+3);
-  text("ALAN TURING:",cwidth*pw+6,7*ph-pw-ph/3+1.5);
-  text("THE ENIGMA",cwidth*pw,7*ph-pw);
+  // stroke(183, 39, 38);
+  // strokeWeight(3);
+  // textSize(20);
+  // textAlign(RIGHT);
+  // fill(183, 39, 38);
+  // rect((cwidth-10)*pw-pw/2, ph*6-3, pw*11-pw/2+3, ph-pw+8);
+  // fill(200);
+  // strokeWeight(0);
+  // text("BASED ON",cwidth*pw,7*ph-pw-ph/3*2+3);
+  // text("ALAN TURING:",cwidth*pw+6,7*ph-pw-ph/3+1.5);
+  // text("THE ENIGMA",cwidth*pw,7*ph-pw);
   
   
   
