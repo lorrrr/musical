@@ -11,6 +11,11 @@ function preload() {
  font = loadFont("assets/CircularBook.otf");
 }
 
+function centerCanvas() {
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+}
 function setup() {
   canvas=createCanvas(764, 1024);
    var x = (windowWidth - width) / 2;
@@ -137,5 +142,8 @@ function draw() {
   text("THE ENIGMA",cwidth*pw,7*ph-pw);
   
   
-  
+}
+
+function windowResized() {
+  centerCanvas();
 }
