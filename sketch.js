@@ -1,4 +1,4 @@
-//lorrrr.github.io/piano
+
 
 
 var video;
@@ -135,7 +135,6 @@ function draw() {
   text("BASED ON",cwidth*pw,7*ph-pw-ph/3*2+3);
   text("ALAN TURING:",cwidth*pw+6,7*ph-pw-ph/3+1.5);
   text("THE ENIGMA",cwidth*pw,7*ph-pw);
-  
   
   
   
